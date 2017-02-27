@@ -1,0 +1,6 @@
+spark
+numpy
+sklearn
+pyspark
+scipy
+kafka-python
