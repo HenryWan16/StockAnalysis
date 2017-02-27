@@ -23,6 +23,9 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 5. Docker:
 Docker containers wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries – anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.
 
+6. Spark:
+Apache Spark™ is a fast and general engine for large-scale data processing.
+
 ## Basic ideas
 The data analyzed by Spark are placed directly to Kafka, not to Cassandra. This would reduce dependency on data server IO performance. We use Redis as a transit point between Kafka and NodeJS, which would improve the transmission efficiency. Cassandra would take the result from Kafka and archive down to complete the data persistence.
 We use Amazon ECS to schedule long-running applications, services, and batch processes using Docker containers, and deploy our applicaionn to Amazon Ec2.
